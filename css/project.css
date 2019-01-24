@@ -202,7 +202,8 @@
         font-family: monexb;
         font-size: 15.75px;
         text-align: right;
-        padding-bottom: 65px; }
+        padding-bottom: 65px;
+        text-transform: uppercase; }
       .projects__all .projects__flex .projects__head h4 {
         font-family: monexb;
         font-size: 48px;
