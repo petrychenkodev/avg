@@ -1,0 +1,191 @@
+@import 'fonts.scss';
+@import 'header.scss';
+@import 'footer.scss';
+.container {
+  max-width: 1980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	border-bottom: 1px solid rgba(183, 183, 183, .3);
+	background-image: url('../img/vacancies.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.main__space{
+	border-right: 1px solid rgba(183, 183, 183, .3);
+}
+.main__all{
+	grid-area: 1 / 2 / 2 / -1;
+}
+.bread{
+	margin: 50px 0 0 55px;
+	font-family: monlight;
+	font-size:12.5px;
+	color: #000;
+	text-transform: uppercase;
+	a{
+		text-decoration: none;
+		color: #000;
+		cursor: pointer;
+	}
+	.bread__next{
+		margin: 0 10px;
+	}
+	a:last-child{
+		color: grey;
+	}
+	a::after{
+		content: ">";
+		margin: 0 10px;
+	}
+	a:last-child::after{
+		content: '';
+	}
+}
+.bread::before{
+		    content: ' ';
+	    width: 75px;
+	    height: 1px;
+	    background-color: rgba(183, 183, 183, 0.3);
+	    display: block;
+	    position: relative;
+	    right: 90px;
+	    top: 7px;
+}
+.selector{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.selector__item{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #000;
+		border: 1px solid black;
+		margin: 0 5px;
+		cursor: pointer;
+	}
+	.selector__item--choose{
+		background-color: #fff;
+	}
+}
+.flex__list__items{
+			font-family:monlight;
+			font-size:12.5px;
+			color: #a3a3a3;
+			letter-spacing: 1px;
+			transition: 0.5s;
+			margin: 40px 0 15px 0;
+			li{
+				padding-bottom: 25px;
+				position: relative;
+				transition: 0.5s;
+				text-transform: uppercase;
+			}
+		}
+.all__flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 60px 0 220px 50px ;
+}
+.selector__start{
+	justify-content: flex-start;
+}
+.projects__head{
+			padding-top: 65px;
+			padding-bottom: 105px;
+			width: 535px;
+			position: relative;
+		    background-image: url(../img/about__important__bg.png);
+		    background-repeat: no-repeat;
+		    background-position: 0px 60px;
+    		background-size: 300px;
+			h5{
+				font-family: monexb;
+    			font-size: 15.75px;
+    			text-align: right;
+    			padding-bottom: 65px;
+    			text-transform: uppercase;
+			}
+			h4{
+				font-family: monexb;
+			    font-size: 48px;
+			    text-transform: uppercase;
+			    text-align: right;
+			}
+			p{
+				    font-family: monlight;
+				    font-size: 12px;
+				    line-height: 17px;
+				    color: #000;
+				        text-align: justify;
+				        margin-top:115px;
+			}
+			span{
+				    display: block;
+			    text-align: left;
+			    font-family: monlight;
+			    font-size: 12.5px;
+			    text-transform: uppercase;
+			    color: #b0b0b0;
+			    letter-spacing: 3px;
+			    margin-top: 50px;
+			}
+			span::after{
+				    content: ' ';
+				    width: 75px;
+				    height: 1px;
+				    background-color: rgba(183, 183, 183, 0.3);
+				    display: block;
+				    position: relative;
+				    left: 315px;
+				    top: -7px;
+			}
+		}
+.flex__inputs{
+	width: 690px;
+	.selector__end{
+	justify-content: flex-end;
+	margin-right: 60px;
+	margin-bottom: 40px;
+	}
+	form{
+		input{
+			display: block;
+			width: 100%;
+			text-transform: uppercase;
+			box-sizing: border-box;
+			padding: 20px 0;
+			font-family: monlight;
+		    font-size: 12.5px;
+		    color: #a3a3a3;
+		    letter-spacing: 3px;
+		    border: none;
+		    border-bottom: 1px solid rgba(183, 183, 183, .3);
+		    background-color: #fff;
+		}
+		.form__big{
+			padding-bottom: 75px;
+		}
+		.form__submit{
+		width: 200px;
+		height: 40px;
+		border: 1px solid rgba(183, 183, 183, .3);
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 48px;
+		color: #000;
+		padding-right: 40px;
+		background-image: url('../img/arrow__right.png');
+		background-size: 40px;
+		background-position: right;
+		background-repeat: no-repeat;
+		}
+	}
+}

@@ -71,10 +71,15 @@
   src: url(../fonts/Montserrat-ThinItalic.ttf); }
 
 .header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: 1px solid rgba(183, 183, 183, 0.3); }
+
+.header__all {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(183, 183, 183, 0.3); }
+  grid-area: 1 / 2 / 2 / -1; }
 
 .header__list {
   display: flex;
@@ -87,7 +92,7 @@
   margin-right: 60px; }
 
 .header__logo {
-  padding: 15px 30px;
+  padding: 15px;
   border-right: 1px solid rgba(183, 183, 183, 0.3); }
   .header__logo img {
     cursor: pointer; }
